@@ -10,7 +10,7 @@ const routes: Routes = [{
 }, {
   path: 'chart',
   component: ChartComponent
-}];
+},{path:'**',pathMatch:'full',redirectTo:'home'}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
