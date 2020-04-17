@@ -1,0 +1,36 @@
+body {
+  background-color: #ccd7e8;
+}
+
+.tableContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden;
+  width: 500px;
+  border-radius: 10px;
+}
+
+th, td {
+  font-family:'Motnserrat',sans-serif;
+  text-align: left;
+  font-size: 12px;
+  padding: 10px;
+}
+
+th {
+  background-color: #7691ab;
+  color: white;
+}
+
+.tagged{
+  color: #eb6f5e;
+  cursor: pointer;
+}

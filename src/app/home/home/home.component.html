@@ -1,0 +1,16 @@
+
+<div class="tableContainer">
+  <table>
+    <tr><th>Concept Name</th>
+    <th>Type</th>
+    <th>Unique Values</th>
+    <th>Missing Values</th>
+  </tr>
+    <tr *ngFor="let value of data;let i=index">
+      <td ><a class="tagged" routerLink="./chart" [queryParams]="{'cId':i}">{{value.conceptName}}</a></td>
+      <td>{{value.statType}}</td>
+      <td>{{value.uniqueCount}}</td>
+      <td>{{value.nullCount}}</td>
+    </tr>
+  </table>
+</div>
